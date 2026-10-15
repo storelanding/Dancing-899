@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dance AI – Turn Any Photo Into a Dance Video | Vellune Design LCC</title>
+  <meta name="description" content="Dance AI turns a single photo into a stunning dance video. Upload your picture, pick a trending dance template, and let AI do the moves. By Vellune Design LCC." />
+  <meta property="og:title" content="Dance AI – Turn Any Photo Into a Dance Video" />
+  <meta property="og:description" content="Upload a photo, choose a template, and watch AI make you dance." />
+  <meta name="theme-color" content="#0b0716" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💃</text></svg>" />
+</head>
+<body>
+  <div class="glow"></div>
+
+  <!-- Header -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">💃</span>
+        <span>Dance <span class="grad-text">AI</span></span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#templates">Templates</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#download" class="btn btn-primary btn-sm nav-cta">Get the App</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge"><span class="dot"></span> New: 50+ trending dance templates</span>
+        <h1>Turn any photo into a <span class="grad-text">dance video</span> with AI</h1>
+        <p class="lead">Upload one photo, pick a dance template you love, and Dance AI brings you to life — smooth moves, perfect rhythm, ready to share in seconds. No dancing skills required.</p>
+        <div class="hero-cta" id="download">
+          <a href="#" class="store-btn" aria-label="Download on the App Store">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.75 0-1.9-.85-3.13-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 3 2.4 1.2-.05 1.66-.78 3.12-.78 1.45 0 1.86.78 3.13.75 1.3-.02 2.12-1.17 2.91-2.33.92-1.34 1.3-2.63 1.32-2.7-.03-.01-2.53-.97-2.55-3.83zM13.97 5.55c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.43-.61.7-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.33z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a href="#" class="store-btn dark" aria-label="Get it on Google Play">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#22d3ee" d="M3.6 1.8 13.4 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#fbbf24" d="m16.7 15.3-3.3-3.3 3.3-3.3 3.8 2.2c1 .6 1 1.6 0 2.2l-3.8 2.2z"/><path fill="#ff3d9a" d="M16.7 15.3 13.4 12 3.6 22.2c.4.2.9.2 1.4-.1l11.7-6.8z"/><path fill="#8b5cf6" d="M16.7 8.7 5 1.9c-.5-.3-1-.3-1.4-.1L13.4 12l3.3-3.3z"/></svg>
+            <span><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+        <div class="hero-proof">
+          <div class="avatars">
+            <span style="background:#ff3d9a">😎</span>
+            <span style="background:#8b5cf6">🤩</span>
+            <span style="background:#22d3ee">😄</span>
+            <span style="background:#fbbf24">🥳</span>
+          </div>
+          <div><span class="stars">★★★★★</span><br />Loved by 2M+ creators worldwide</div>
+        </div>
+      </div>
+
+      <div class="phone-wrap">
+        <div class="ring r1"></div>
+        <div class="ring r2"></div>
+        <div class="float-card fc-1">
+          <span class="ic i-pink">📸</span>
+          <div>Photo uploaded<small>Analyzing pose…</small></div>
+        </div>
+        <div class="float-card fc-2">
+          <span class="ic i-cyan">⚡</span>
+          <div>Video ready!<small>Generated in 28s</small></div>
+        </div>
+        <div class="phone">
+          <div class="screen">
+            <div class="notch"></div>
+            <div class="screen-top">
+              <span class="chip">K-Pop Wave</span>
+              <span class="chip live">● AI</span>
+            </div>
+            <div class="stage">
+              <div class="notes"><span>🎵</span><span>✨</span><span>🎶</span></div>
+              <svg class="dancer" viewBox="0 0 200 300" aria-hidden="true">
+                <defs>
+                  <linearGradient id="dg" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#ff3d9a" />
+                    <stop offset=".5" stop-color="#8b5cf6" />
+                    <stop offset="1" stop-color="#22d3ee" />
+                  </linearGradient>
+                </defs>
+                <g class="body" stroke="url(#dg)" stroke-width="14" stroke-linecap="round" fill="none">
+                  <circle cx="100" cy="50" r="22" fill="url(#dg)" stroke="none" />
+                  <line x1="100" y1="80" x2="100" y2="165" />
+                  <g class="arm-l"><line x1="90" y1="92" x2="50" y2="130" /></g>
+                  <g class="arm-r"><line x1="110" y1="92" x2="150" y2="130" /></g>
+                  <g class="leg-l"><line x1="95" y1="168" x2="70" y2="260" /></g>
+                  <g class="leg-r"><line x1="105" y1="168" x2="130" y2="260" /></g>
+                </g>
+              </svg>
+              <div class="spot"></div>
+            </div>
+            <div class="screen-bottom">
+              <div class="progress-card">
+                <div class="row"><span>Generating your dance…</span><span>✨</span></div>
+                <div class="bar"><i></i></div>
+              </div>
+              <div class="tpl-row">
+                <div class="g1 sel">🎤</div>
+                <div class="g2">🕺</div>
+                <div class="g3">💃</div>
+                <div class="g4">🩰</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container stats reveal">
+      <div class="stat"><strong class="grad-text">2M+</strong><span>Happy creators</span></div>
+      <div class="stat"><strong class="grad-text">15M+</strong><span>Videos generated</span></div>
+      <div class="stat"><strong class="grad-text">50+</strong><span>Dance templates</span></div>
+      <div class="stat"><strong class="grad-text">~30s</strong><span>Average render time</span></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>K-Pop</span><b>✦</b><span>Hip Hop</span><b>✦</b><span>Ballet</span><b>✦</b><span>Salsa</span><b>✦</b><span>Breakdance</span><b>✦</b><span>Viral Trends</span><b>✦</b><span>Disco</span><b>✦</b><span>Shuffle</span><b>✦</b><span>Jazz Funk</span><b>✦</b><span>Bollywood</span><b>✦</b>
+      <span>K-Pop</span><b>✦</b><span>Hip Hop</span><b>✦</b><span>Ballet</span><b>✦</b><span>Salsa</span><b>✦</b><span>Breakdance</span><b>✦</b><span>Viral Trends</span><b>✦</b><span>Disco</span><b>✦</b><span>Shuffle</span><b>✦</b><span>Jazz Funk</span><b>✦</b><span>Bollywood</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <section class="block" id="how">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">How It Works</span>
+        <h2>From photo to <span class="grad-text">dance floor</span> in 3 steps</h2>
+        <p>No editing skills, no green screen, no rehearsals. Our AI handles the choreography — you just enjoy the show.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="icon i-pink">📤</div>
+          <h3>Upload a photo</h3>
+          <p>Choose a clear photo of yourself, a friend, your pet or even a cartoon character. A full-body or half-body shot works best.</p>
+        </div>
+        <div class="step reveal">
+          <div class="icon i-violet">🎬</div>
+          <h3>Pick a template</h3>
+          <p>Browse dozens of dance templates — from viral TikTok trends to K-Pop choreography, hip hop, ballet and more.</p>
+        </div>
+        <div class="step reveal">
+          <div class="icon i-cyan">🚀</div>
+          <h3>Generate &amp; share</h3>
+          <p>AI animates your photo with realistic motion in seconds. Save in HD and share straight to TikTok, Instagram, or YouTube Shorts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Templates -->
+  <section class="block" id="templates" style="padding-top:0">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Template Library</span>
+        <h2>Dance styles for <span class="grad-text">every vibe</span></h2>
+        <p>New templates drop every week, so there's always a fresh move to try.</p>
+      </div>
+      <div class="filters reveal">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="trend">🔥 Trending</button>
+        <button class="filter" data-filter="kpop">K-Pop</button>
+        <button class="filter" data-filter="street">Street</button>
+        <button class="filter" data-filter="classic">Classic</button>
+        <button class="filter" data-filter="fun">Fun</button>
+      </div>
+      <div class="tpl-grid">
+        <div class="tpl g1 reveal" data-cat="kpop trend"><span class="tag hot">HOT</span><span class="play">▶</span><span class="emoji">🎤</span><h4>K-Pop Wave</h4><small>Idol choreography · 15s</small></div>
+        <div class="tpl g2 reveal" data-cat="street"><span class="tag">NEW</span><span class="play">▶</span><span class="emoji">🕺</span><h4>Hip Hop Groove</h4><small>Street style · 12s</small></div>
+        <div class="tpl g3 reveal" data-cat="classic"><span class="play">▶</span><span class="emoji">💃</span><h4>Salsa Night</h4><small>Latin rhythm · 15s</small></div>
+        <div class="tpl g4 reveal" data-cat="classic"><span class="play">▶</span><span class="emoji">🩰</span><h4>Ballet Dream</h4><small>Graceful &amp; elegant · 10s</small></div>
+        <div class="tpl g5 reveal" data-cat="street trend"><span class="tag hot">HOT</span><span class="play">▶</span><span class="emoji">🤸</span><h4>Breakdance Spin</h4><small>Power moves · 12s</small></div>
+        <div class="tpl g6 reveal" data-cat="fun trend"><span class="tag hot">VIRAL</span><span class="play">▶</span><span class="emoji">🪩</span><h4>Disco Fever</h4><small>Retro 70s · 15s</small></div>
+        <div class="tpl g7 reveal" data-cat="kpop"><span class="play">▶</span><span class="emoji">✨</span><h4>Idol Heart</h4><small>Cute K-Pop · 10s</small></div>
+        <div class="tpl g8 reveal" data-cat="fun"><span class="tag">NEW</span><span class="play">▶</span><span class="emoji">🐶</span><h4>Pet Party</h4><small>Make your pet dance · 10s</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="block" id="features" style="padding-top:0">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Features</span>
+        <h2>Powerful AI, <span class="grad-text">ridiculously simple</span></h2>
+        <p>Everything you need to create scroll-stopping dance content from a single image.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat wide reveal">
+          <div>
+            <div class="icon i-pink">🧠</div>
+            <h3>Realistic motion AI</h3>
+            <p>Our motion model understands body pose, clothing and lighting to animate your photo naturally — keeping your face, outfit and style perfectly consistent from the first frame to the last.</p>
+          </div>
+          <div class="ba">
+            <div class="ba-box g2">🧍<small>Photo</small></div>
+            <div class="ba-arrow">➜</div>
+            <div class="ba-box g1">🕺<small>Dance</small></div>
+          </div>
+        </div>
+        <div class="feat reveal">
+          <div class="icon i-violet">⚡</div>
+          <h3>Lightning fast</h3>
+          <p>Most videos render in under 30 seconds — no waiting around.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="icon i-cyan">🎞️</div>
+          <h3>HD export</h3>
+          <p>Download crisp HD videos in vertical 9:16, perfect for Reels and Shorts.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="icon i-amber">🎵</div>
+          <h3>Music synced</h3>
+          <p>Every template comes with beat-matched music so moves land on the rhythm.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="icon i-pink">👯</div>
+          <h3>Group dance</h3>
+          <p>Upload multiple photos and make your whole squad dance together.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="icon i-violet">🐾</div>
+          <h3>Pets &amp; characters</h3>
+          <p>Not just people — make your cat, dog or favorite drawing bust a move.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="icon i-cyan">🔒</div>
+          <h3>Private by design</h3>
+          <p>Your photos are used only to create your video and are never sold.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase -->
+  <section class="block" style="padding-top:0">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Made for Creators</span>
+        <h2>Go viral with content that <span class="grad-text">moves</span></h2>
+        <p>Whether you're a content creator, a small business, or just want to surprise your friends — Dance AI makes it easy to create fun, shareable videos that people can't stop watching.</p>
+        <ul class="checklist">
+          <li>Surprise friends and family with birthday &amp; holiday dance greetings</li>
+          <li>Boost engagement on TikTok, Instagram Reels and YouTube Shorts</li>
+          <li>Bring old photos and memories back to life</li>
+          <li>Create playful promos for your brand or mascot</li>
+        </ul>
+        <a href="#download" class="btn btn-primary">Start Dancing Free →</a>
+      </div>
+      <div class="mosaic reveal">
+        <div class="g1">🎤</div>
+        <div class="g7">🕺</div>
+        <div class="g3">💃</div>
+        <div class="g4">🩰</div>
+        <div class="g6">🪩</div>
+        <div class="g8">🐱</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="block" style="padding-top:0">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Testimonials</span>
+        <h2>People are <span class="grad-text">obsessed</span></h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi reveal">
+          <span class="stars">★★★★★</span>
+          <p>"I made my grandma do the K-Pop Wave for her birthday and the whole family was crying laughing. Easily the best app on my phone."</p>
+          <div class="who"><span class="av i-pink">👩</span><div><strong>Jessica M.</strong><small>Content creator</small></div></div>
+        </div>
+        <div class="testi reveal">
+          <span class="stars">★★★★★</span>
+          <p>"The motion looks shockingly real. My dog doing a hip hop routine got 1.2M views on TikTok. Absolutely worth it."</p>
+          <div class="who"><span class="av i-cyan">🧑</span><div><strong>Daniel K.</strong><small>Pet influencer</small></div></div>
+        </div>
+        <div class="testi reveal">
+          <span class="stars">★★★★★</span>
+          <p>"Super simple: upload, tap, done. We use it for fun promos for our café mascot and customers love it."</p>
+          <div class="who"><span class="av i-amber">👨‍🍳</span><div><strong>Linh T.</strong><small>Small business owner</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="block" id="pricing" style="padding-top:0">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>Start free, <span class="grad-text">upgrade anytime</span></h2>
+        <p>Try Dance AI for free. Unlock unlimited creativity with Premium.</p>
+      </div>
+      <div class="price-grid">
+        <div class="price reveal">
+          <h3>Free</h3>
+          <div class="amt">$0</div>
+          <p>Perfect for trying things out.</p>
+          <ul>
+            <li>Free daily credits</li>
+            <li>Selected dance templates</li>
+            <li>Standard quality export</li>
+            <li>Watermarked videos</li>
+          </ul>
+          <a href="#download" class="btn btn-ghost">Download Free</a>
+        </div>
+        <div class="price pop reveal">
+          <h3>Premium Weekly</h3>
+          <div class="amt">Weekly <small>plan</small></div>
+          <p>For creators who post often.</p>
+          <ul>
+            <li>All 50+ dance templates</li>
+            <li>HD export, no watermark</li>
+            <li>Priority fast rendering</li>
+            <li>Group &amp; pet dance modes</li>
+          </ul>
+          <a href="#download" class="btn btn-primary">Go Premium</a>
+        </div>
+        <div class="price reveal">
+          <h3>Premium Yearly</h3>
+          <div class="amt">Yearly <small>plan</small></div>
+          <p>Biggest savings for dance lovers.</p>
+          <ul>
+            <li>Everything in Premium</li>
+            <li>Early access to new templates</li>
+            <li>Bonus monthly credits</li>
+            <li>Priority support</li>
+          </ul>
+          <a href="#download" class="btn btn-ghost">Save with Yearly</a>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--muted);font-size:.85rem;margin-top:24px">Prices vary by region and are shown in the app before purchase. Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq" style="padding-top:0">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="eyebrow">FAQ</span>
+        <h2>Questions? <span class="grad-text">We've got answers</span></h2>
+      </div>
+      <div class="faq reveal">
+        <details open>
+          <summary>What kind of photo works best?</summary>
+          <p>A clear, well-lit photo with one main subject works best. Full-body or half-body shots facing the camera give the most natural results. Avoid heavily blurred or cropped images.</p>
+        </details>
+        <details>
+          <summary>How long does it take to generate a video?</summary>
+          <p>Most videos are ready in about 30 seconds. During peak times it may take a little longer. Premium members get priority rendering.</p>
+        </details>
+        <details>
+          <summary>Can I use photos of my pets or cartoon characters?</summary>
+          <p>Yes! Dance AI works with people, pets, illustrations and characters. Just make sure you own the image or have permission to use it.</p>
+        </details>
+        <details>
+          <summary>What happens to the photos I upload?</summary>
+          <p>Your photos are used only to generate the videos you request. We never sell your data. You can delete your content and account at any time. Read our <a href="policies.html" style="color:var(--pink)">Privacy Policy</a> for details.</p>
+        </details>
+        <details>
+          <summary>How do I cancel my subscription?</summary>
+          <p>Subscriptions are managed through your App Store or Google Play account settings. You can cancel anytime at least 24 hours before the renewal date to avoid being charged for the next period.</p>
+        </details>
+        <details>
+          <summary>Can I share videos on social media?</summary>
+          <p>Absolutely. Save videos to your gallery or share directly to TikTok, Instagram, YouTube Shorts, Facebook and messaging apps.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="block" style="padding-top:0">
+    <div class="container">
+      <div class="cta reveal">
+        <h2>Ready to make your photos dance?</h2>
+        <p>Join millions of creators turning still images into viral dance videos. Download Dance AI today — it's free to start.</p>
+        <div class="hero-cta">
+          <a href="#" class="store-btn" aria-label="Download on the App Store">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.6c-.02-2.4 1.96-3.56 2.05-3.62-1.12-1.63-2.86-1.86-3.48-1.88-1.48-.15-2.89.87-3.64.87-.75 0-1.9-.85-3.13-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.91-.43 7.21 1.2 9.57.8 1.15 1.75 2.45 3 2.4 1.2-.05 1.66-.78 3.12-.78 1.45 0 1.86.78 3.13.75 1.3-.02 2.12-1.17 2.91-2.33.92-1.34 1.3-2.63 1.32-2.7-.03-.01-2.53-.97-2.55-3.83zM13.97 5.55c.66-.8 1.11-1.92.99-3.03-.95.04-2.11.64-2.79 1.43-.61.7-1.15 1.84-1 2.93 1.06.08 2.14-.54 2.8-1.33z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a href="#" class="store-btn" aria-label="Get it on Google Play">
+            <svg width="24" height="24" viewBox="0 0 24 24"><path fill="#0ea5e9" d="M3.6 1.8 13.4 12 3.6 22.2c-.4-.2-.6-.6-.6-1.1V2.9c0-.5.2-.9.6-1.1z"/><path fill="#f59e0b" d="m16.7 15.3-3.3-3.3 3.3-3.3 3.8 2.2c1 .6 1 1.6 0 2.2l-3.8 2.2z"/><path fill="#ff3d9a" d="M16.7 15.3 13.4 12 3.6 22.2c.4.2.9.2 1.4-.1l11.7-6.8z"/><path fill="#8b5cf6" d="M16.7 8.7 5 1.9c-.5-.3-1-.3-1.4-.1L13.4 12l3.3-3.3z"/></svg>
+            <span><small>Get it on</small><strong>Google Play</strong></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="block" id="contact" style="padding-top:0">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div>
+          <span class="eyebrow">Contact Us</span>
+          <h2>We'd love to <span class="grad-text">hear from you</span></h2>
+          <p>Have a question, feedback, a partnership idea, or need help with your account? Drop us an email and our team at Vellune Design LCC will get back to you as soon as possible.</p>
+        </div>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:oneodoserdo9@gmail.com">
+            <span class="ic i-pink">✉️</span>
+            <div><small>Email</small><strong>oneodoserdo9@gmail.com</strong></div>
+          </a>
+          <div class="contact-item">
+            <span class="ic i-violet">🏢</span>
+            <div><small>Developer</small><strong>Vellune Design LCC</strong></div>
+          </div>
+          <div class="contact-item">
+            <span class="ic i-cyan">⏱️</span>
+            <div><small>Response time</small><strong>Within 1–2 business days</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="foot-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-mark">💃</span><span>Dance <span class="grad-text">AI</span></span></a>
+          <p>Turn any photo into an amazing dance video with the power of AI. Made with ♥ by Vellune Design LCC.</p>
+        </div>
+        <div>
+          <h5>Product</h5>
+          <ul>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#templates">Templates</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="policies.html">Privacy Policy</a></li>
+            <li><a href="term.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Support</h5>
+          <ul>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="mailto:oneodoserdo9@gmail.com">oneodoserdo9@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© <span class="year">2026</span> Vellune Design LCC. All rights reserved.</span>
+        <span><a href="policies.html">Privacy</a> · <a href="term.html">Terms</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
